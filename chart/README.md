@@ -15,10 +15,10 @@ Source code can be found [here](https://argoproj.github.io/argo-cd/)
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm repo add argo https://argoproj.github.io/argo-helm
-"argo" has been added to your repositories
+$ cd chart/
 
-$ helm install --name my-release argo/argo-cd
-NAME: my-release
-...
+$ helm dep update
+
+$ helm install --name my-release . -n argocd
+
 ```
