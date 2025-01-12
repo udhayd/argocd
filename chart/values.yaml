@@ -4,7 +4,7 @@ argocd:
     ingress:
       enabled: true
       hosts:
-      - argocd.groofy.cloud
+      - argocd.groofy.info
 
     extraArgs:
     - --insecure
